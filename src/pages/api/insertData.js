@@ -14,7 +14,7 @@ async function Insert(req,res) {
 
         const {rows} = await sql`INSERT INTO komentar (nama,komentar,website) VALUES (${nama},${komentar},${website})`
 
-        return res.status(200).json({message:"Berhasi",data:rows})
+        return res.status(200).json({message:"Berhasil",data:rows})
     } catch (error) {
         console.log(error);
     }

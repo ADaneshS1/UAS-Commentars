@@ -7,7 +7,7 @@ async function Select(req,res) {
         }
 
         const {rows} = await sql`SELECT * FROM komentar`
-        return res.status(200).json({message:"berhasi",data:rows})
+        return res.status(200).json({message:"berhasil",data:rows})
     } catch (error) {
         console.log(error)
     }
